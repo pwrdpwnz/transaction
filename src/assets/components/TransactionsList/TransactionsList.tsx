@@ -1,16 +1,16 @@
-import styles from './style.module.scss'
-import CardBalance from "./CardBalance/CardBalance.tsx";
-import {Col, Row} from "react-bootstrap";
+import CardBalance from "./header/CardBalance/CardBalance.tsx";
+import CardPayment from "./header/CardPayment/CardPayment.tsx";
+import CardPoints from "./header/CardPoints/CardPoints.tsx";
+
+import styles from './transactionList.module.scss'
+
 
 const TransactionsList = () => {
     return (
-        <div className={styles.cardSection}>
-            <Row>
-                <Col xs={12} md={4}>
-                    <CardBalance balance={17.3} available={1000}/>
-                </Col>
-
-            </Row>
+        <div className={`container ${styles.cardsBox}`}>
+            <CardBalance balance={17.3} available={1000} />
+            <CardPoints  points={456}/>
+            <CardPayment />
         </div>
     );
 };

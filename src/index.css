@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --border-radius: 15px;
+  --nevative-margin: -12px;
 }
 
 a {
@@ -35,6 +36,10 @@ h1 {
   line-height: 1.1;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -47,7 +52,6 @@ button {
   transition: border-color 0.25s;
 }
 
-.card-body {
+.card {
   border-radius: var(--border-radius);
 }
-

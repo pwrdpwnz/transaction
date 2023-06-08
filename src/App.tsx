@@ -1,10 +1,10 @@
-import TransactionsList from "./assets/components/TransactionsList/TransactionsList.tsx";
+import Header from "./assets/components/TransactionsList/header/Header.tsx";
 
 const App = () => {
 
   return (
     <>
-        <TransactionsList />
+        <Header />
     </>
   )
 }

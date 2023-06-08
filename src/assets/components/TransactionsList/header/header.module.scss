@@ -1,0 +1,22 @@
+.header {
+  background: #c1c1c1;
+  padding-bottom: 20px;
+}
+
+.balanceContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardBalance {
+  flex: 1;
+}
+
+.cardPoints {
+  flex: 1;
+}
+
+.cardPayment {
+  flex: 1;
+}
