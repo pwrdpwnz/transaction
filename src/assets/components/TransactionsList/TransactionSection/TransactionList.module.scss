@@ -1,0 +1,48 @@
+.transactionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.operation {
+  color: #888;
+}
+
+.date {
+  color: #888;
+}
+
+.amount {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.detailsIcon {
+  color: #888;
+  cursor: pointer;
+}

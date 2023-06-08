@@ -2,10 +2,10 @@ import CardBalance from "./header/CardBalance/CardBalance.tsx";
 import CardPayment from "./header/CardPayment/CardPayment.tsx";
 import CardPoints from "./header/CardPoints/CardPoints.tsx";
 
-import styles from './transactionList.module.scss'
+import styles from './TransactionSection/TransactionList/transactionList.module.scss'
 
 
-const TransactionsList = () => {
+const TransactionDetails = () => {
     return (
         <div className={`container ${styles.cardsBox}`}>
             <CardBalance balance={17.3} available={1000} />
@@ -15,4 +15,4 @@ const TransactionsList = () => {
     );
 };
 
-export default TransactionsList;
+export default TransactionDetails;
