@@ -3,6 +3,10 @@
   padding-top: 100px;
   position: relative;
 
+  .company {
+    color: var(--bs-gray);
+  }
+
   .summ {
     font-size: 55px;
     font-weight: 600;
@@ -17,4 +21,54 @@
     color: var(--bs-blue);
     font-size: 40px;
   }
+
+  .textBox {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 3em;
+    color: var(--bs-gray);
+  }
+
+  .box {
+    background: var(--bs-white);
+    text-align: start;
+    border-radius: 15px;
+    padding: 25px;
+    & > div {
+      padding: 15px 0;
+    }
+  }
+
+  .status {
+    border-bottom: 1px solid var(--bs-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & p:first-child {
+      color: var(--bs-black);
+      font-weight: 600;
+    }
+
+    & p:last-child {
+      color: var(--bs-grey);
+    }
+  }
+
+  .operation {
+    display: flex;
+    justify-content: space-between;
+
+    & p:first-child {
+      color: var(--bs-black);
+      font-weight: 600;
+    }
+
+    & p:last-child {
+      color: var(--bs-grey);
+      font-weight: 600;
+    }
+  }
+
 }

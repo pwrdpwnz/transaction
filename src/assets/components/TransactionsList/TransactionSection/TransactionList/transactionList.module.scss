@@ -54,11 +54,11 @@
     }
 
     .operation {
-      color: #888;
+      color: var(--bs-gray);
     }
 
     .date {
-      color: #888;
+      color: var(--bs-gray);
     }
 
     .amount {
@@ -79,6 +79,7 @@
       flex-direction: column;
       gap: 5px;
       align-items: flex-end;
+      color: var(--bs-black);
       :first-child {
         font-size: 20px;
       }
@@ -88,7 +89,7 @@
     }
 
     .detailsIcon {
-      color: #888;
+      color: var(--bs-gray);
       cursor: pointer;
     }
 
@@ -100,11 +101,26 @@
       align-self: flex-start;
     }
 
+    .title {
+      font-weight: 800;
+      color: var(--bs-black);
+    }
+
+    p {
+      color: var(--bs-gray);
+    }
+
+
+
     .textOverflow {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
 
+    }
+
+    .hidden {
+      display: none;
     }
   }
 

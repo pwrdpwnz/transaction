@@ -12,9 +12,9 @@ const CardBalance: React.FC<CardBalanceProps> = ({ balance, limit }) => {
 
     return (
         <div className={`card ${styles.cardBalance}`}>
-            <p className={styles.title}>Баланс карты</p> {/* Заголовок компонента */}
+            <p className={styles.title}>Card Balance</p> {/* Заголовок компонента */}
             <p className={styles.balanceAmount}>${balance.toFixed(2)}</p> {/* Сумма баланса */}
-            <p className={styles.available}>${available.toFixed(2)} Доступно</p> {/* Доступный остаток */}
+            <p className={styles.available}>${available.toFixed(2)} Available</p> {/* Доступный остаток */}
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
+import {useParams, Link} from 'react-router-dom';
+import {Container} from 'react-bootstrap';
 
 import styles from './transactionDetails.module.scss';
 
@@ -11,6 +11,8 @@ interface Transaction {
     operation: string;
     date: string;
     amount: number;
+    time: string;
+    status: string;
 }
 
 // Интерфейс для пропсов компонента TransactionDetails
@@ -18,8 +20,8 @@ interface TransactionDetailsProps {
     transactions: Transaction[];
 }
 
-const TransactionDetails: React.FC<TransactionDetailsProps> = ({ transactions }) => {
-    const { id } = useParams<{ id: string }>();
+const TransactionDetails: React.FC<TransactionDetailsProps> = ({transactions}) => {
+    const {id} = useParams<{ id: string }>();
 
     const transaction = transactions.find((transaction) => transaction.id === id);
 
@@ -30,12 +32,25 @@ const TransactionDetails: React.FC<TransactionDetailsProps> = ({ transactions })
     return (
         <div className={styles.details}>
             <Link className={styles.nav} to="/"> {'<'} </Link> {/* Ссылка для возврата на предыдущую страницу */}
+
             <Container>
-                <p className={styles.summ}>${transaction.amount}</p> {/* Сумма транзакции */}
-                <p>{transaction.company}</p> {/* Название компании */}
-                <p>{transaction.date}</p> {/* Дата и время */}
-                <p>{transaction.operation}</p> {/* Описание операции */}
-                <p>Total ${transaction.amount}</p> {/* Общая сумма */}
+                <p className={styles.summ}>${transaction.amount}</p>
+                <p className={styles.company}>{transaction.company}</p>
+                <div className={styles.textBox}>
+                    <p>{transaction.date}</p>
+                    <span>, </span>
+                    <p>{transaction.time}</p>
+                </div>
+                <div className={styles.box}>
+                    <div className={styles.status}>
+                        <p>Status: {transaction.status}</p>
+                        <p>{transaction.operation}</p>
+                    </div>
+                    <div className={styles.operation}>
+                        <p>Total</p>
+                        <p>${transaction.amount}</p>
+                    </div>
+                </div>
             </Container>
         </div>
     );

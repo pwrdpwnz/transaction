@@ -11,9 +11,11 @@ interface Transaction {
     company: string;
     operation: string;
     date: string;
+    time: string;
     amount: number;
     icon: IconProp;
     discount: number;
+    status: string;
 }
 
 // Интерфейс для компонента списка транзакций
@@ -46,7 +48,7 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
                             <div className={styles.containerBox}>
                                 <div>
                                     {/* Название компании */}
-                                    <p className={styles.textOverflow}>
+                                    <p className={`${styles.textOverflow} ${styles.title}`}>
                                         {transaction.company}
                                     </p>
 
@@ -59,10 +61,14 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
                                     <p className={styles.textOverflow}>
                                         {transaction.date}
                                     </p>
+                                    <p className={styles.hidden}>
+                                        {transaction.time}
+                                    </p>
+                                    {/* Дата и время */}
                                 </div>
                                 <div className={styles.column}>
                                     {/* Сумма транзакции */}
-                                    <p className={styles.summ}> {transaction.amount > 0 ? `+${transaction.amount}$` : `${transaction.amount}$`}</p>
+                                    <p className={styles.summ}> {transaction.status === 'Pending' ? `${transaction.amount}$` : `+${transaction.amount}$`}</p>
                                     {/* Скидка */}
                                     <p>{transaction.discount}%</p>
                                 </div>
