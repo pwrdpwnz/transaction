@@ -32,7 +32,8 @@ const TransactionDetails: React.FC<TransactionDetailsProps> = ({transactions}) =
                 <p className={styles.summ}>${transaction.amount}</p>
                 <p>{transaction.company}</p>
                 <p>{transaction.date}</p>
-                <p>Операция: {transaction.operation}</p>
+                <p>{transaction.operation}</p>
+                <p>Total ${transaction.amount}</p>
             </Container>
         </div>
     );
