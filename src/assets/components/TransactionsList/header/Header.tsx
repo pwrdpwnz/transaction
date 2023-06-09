@@ -7,8 +7,8 @@ import {Col, Container, Row} from "react-bootstrap";
 
 
 const Header: React.FC = () => {
-    const balance = 777;
-    const limit= 1500;
+    const balance = 777; // Баланс карты
+    const limit= 1500; // Лимит карты
 
     return (
         <header className={styles.header}>

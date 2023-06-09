@@ -5,11 +5,11 @@ const CardPayment: React.FC = () => {
     return (
         <div className={`card ${styles.cardPayment}`}>
             <div className={styles.container}>
-                <p>No Payment Due</p>
-                <p>You’ve paid your June balance</p>
+                <p>Нет платежа</p>
+                <p>Вы выплатили ваш баланс за июнь</p>
             </div>
             <div className={styles.checkmark}>
-                <span>&#10003;</span>
+                <span>&#10003;</span> {/* Знак галочки */}
             </div>
         </div>
     );
