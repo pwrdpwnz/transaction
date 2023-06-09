@@ -7,13 +7,16 @@ import {Col, Container, Row} from "react-bootstrap";
 
 
 const Header: React.FC = () => {
+    const balance = 777;
+    const limit= 1500;
+
     return (
         <header className={styles.header}>
             <Container>
                 <Row>
                     <Col>
                         <div className={styles.cardContainer}>
-                            <CardBalance balance={14.34} available={1000}/>
+                            <CardBalance limit={limit} balance={balance} />
                             <CardPoints points={435}/>
                         </div>
                     </Col>

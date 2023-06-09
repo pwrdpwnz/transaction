@@ -1,0 +1,20 @@
+.details {
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+
+  .summ {
+    font-size: 55px;
+    font-weight: 600;
+    color: var(--bs-black);
+    font-family: cursive, sans-serif;
+  }
+
+  .nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--bs-blue);
+    font-size: 40px;
+  }
+}

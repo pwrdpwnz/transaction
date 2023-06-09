@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, useNavigate} from 'react-router-dom';
-import styles from '../TransactionList.module.scss';
+import styles from './transactionList.module.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {IconProp} from '@fortawesome/fontawesome-svg-core';
 import {Container} from "react-bootstrap";

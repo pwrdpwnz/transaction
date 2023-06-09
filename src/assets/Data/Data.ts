@@ -91,13 +91,5 @@ export const transactions = [
         amount: 73.58,
         discount: 2,
     },
-    {
-        id: '11',
-        icon: faAppleAlt,
-        company: 'Target',
-        operation: 'Cedar Park, TX',
-        date: '9/1/22',
-        amount: 73.58,
-        discount: 2,
-    },
+
 ];

@@ -6,7 +6,7 @@ const CardPayment: React.FC = () => {
         <div className={`card ${styles.cardPayment}`}>
             <div className={styles.container}>
                 <p>No Payment Due</p>
-                <p>You've paid your September balance</p>
+                <p>You’ve paid your June balance</p>
             </div>
             <div className={styles.checkmark}>
                 <span>&#10003;</span>
