@@ -7,7 +7,7 @@ interface CardPointsProps {
 
 const CardPoints: React.FC<CardPointsProps> = ({ points }) => {
     return (
-        <div className={styles.cardPoints}>
+        <div className={`card ${styles.cardPoints}`}>
             <p>Daily Points</p>
             <p className={styles.pointsAmount}>{points}K</p>
         </div>

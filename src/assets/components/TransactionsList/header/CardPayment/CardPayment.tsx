@@ -3,7 +3,7 @@ import styles from './CardPayment.module.scss';
 
 const CardPayment: React.FC = () => {
     return (
-        <div className={styles.cardPayment}>
+        <div className={`card ${styles.cardPayment}`}>
             <div className={styles.container}>
                 <p>No Payment Due</p>
                 <p>You've paid your September balance</p>

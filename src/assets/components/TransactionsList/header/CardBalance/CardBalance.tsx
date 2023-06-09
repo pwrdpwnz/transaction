@@ -8,7 +8,7 @@ interface CardBalanceProps {
 
 const CardBalance: React.FC<CardBalanceProps> = ({ balance, available }) => {
     return (
-        <div className={styles.cardBalance}>
+        <div className={`card ${styles.cardBalance}`}>
             <p className={styles.title}>Card Balance</p>
             <p className={styles.balanceAmount}>${balance.toFixed(2)}</p>
             <p className={styles.available}>${available} Available</p>
